@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="10" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="10" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -144,18 +144,20 @@
 </layers>
 <board>
 <plain>
-<wire x1="27.94" y1="34.29" x2="27.2905125" y2="34.086734375" width="0.3048" layer="20"/>
-<wire x1="27.2905125" y1="34.086734375" x2="19.685" y2="39.675765625" width="0.3048" layer="20" curve="-107.378173"/>
-<wire x1="19.685" y1="39.675765625" x2="27.305" y2="45.085" width="0.3048" layer="20" curve="-109.260162"/>
-<wire x1="27.305" y1="45.085" x2="27.305" y2="46.355" width="0.3048" layer="20"/>
-<wire x1="27.305" y1="46.355" x2="27.94" y2="46.99" width="0.3048" layer="20" curve="-90"/>
-<wire x1="27.94" y1="46.99" x2="35.296978125" y2="46.99" width="0.3048" layer="20"/>
-<wire x1="35.296978125" y1="46.99" x2="37.465" y2="44.821978125" width="0.3048" layer="20" curve="-90"/>
-<wire x1="37.465" y1="44.821978125" x2="37.465" y2="34.553021875" width="0.3048" layer="20"/>
-<wire x1="37.465" y1="34.553021875" x2="35.296978125" y2="32.385" width="0.3048" layer="20" curve="-90"/>
-<wire x1="35.296978125" y1="32.385" x2="28.575" y2="32.385" width="0.3048" layer="20"/>
-<wire x1="28.575" y1="32.385" x2="27.94" y2="33.02" width="0.3048" layer="20" curve="-90"/>
-<wire x1="27.94" y1="33.02" x2="27.94" y2="34.29" width="0.3048" layer="20"/>
+<wire x1="34.925" y1="46.99" x2="34.925" y2="33.02" width="0.635" layer="20"/>
+<wire x1="34.925" y1="46.99" x2="34.29" y2="47.625" width="0.635" layer="20" curve="90"/>
+<wire x1="34.29" y1="47.625" x2="29.845" y2="47.625" width="0.635" layer="20"/>
+<wire x1="29.845" y1="47.625" x2="28.575" y2="46.355" width="0.635" layer="20" curve="90"/>
+<wire x1="28.575" y1="46.355" x2="27.94" y2="45.72" width="0.635" layer="20" curve="-90"/>
+<wire x1="27.94" y1="45.72" x2="22.225" y2="45.72" width="0.635" layer="20"/>
+<wire x1="22.225" y1="45.72" x2="19.685" y2="43.18" width="0.635" layer="20" curve="90"/>
+<wire x1="19.685" y1="43.18" x2="19.685" y2="36.83" width="0.635" layer="20"/>
+<wire x1="34.925" y1="33.02" x2="34.29" y2="32.385" width="0.635" layer="20" curve="-90"/>
+<wire x1="34.29" y1="32.385" x2="29.845" y2="32.385" width="0.635" layer="20"/>
+<wire x1="29.845" y1="32.385" x2="28.575" y2="33.655" width="0.635" layer="20" curve="-90"/>
+<wire x1="28.575" y1="33.655" x2="27.305" y2="34.925" width="0.635" layer="20" curve="90"/>
+<wire x1="27.305" y1="34.925" x2="21.59" y2="34.925" width="0.635" layer="20"/>
+<wire x1="21.59" y1="34.925" x2="19.685" y2="36.83" width="0.635" layer="20" curve="-90"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -429,55 +431,42 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="LED-2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="WS2812B" value="WS2812B5050" x="25.9588" y="39.5732"/>
-<element name="J1" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="33.02" y="36.195" rot="R90">
-<attribute name="PROD_ID" value="CONN-09696" x="33.02" y="36.195" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="LED-2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="WS2812B" value="WS2812B5050" x="24.8158" y="40.3352"/>
+<element name="J1" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="32.385" y="36.195" rot="R90">
+<attribute name="PROD_ID" value="CONN-09696" x="32.385" y="36.195" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 </elements>
 <signals>
 <signal name="N$1">
-<contactref element="LED-2" pad="3-GND"/>
-<contactref element="J1" pad="4"/>
-<wire x1="23.5088" y1="41.2232" x2="23.495" y2="41.237" width="0.3048" layer="1" curve="-90"/>
-<wire x1="23.495" y1="41.237" x2="23.495" y2="42.418" width="0.3048" layer="1"/>
-<wire x1="28.956" y1="43.434" x2="29.337" y2="43.815" width="0.3048" layer="1"/>
-<wire x1="33.147" y1="43.815" x2="29.337" y2="43.815" width="0.3048" layer="1"/>
-<wire x1="23.495" y1="42.418" x2="24.511" y2="43.434" width="0.3048" layer="1"/>
-<wire x1="24.511" y1="43.434" x2="28.956" y2="43.434" width="0.3048" layer="1"/>
+<contactref element="J1" pad="1"/>
+<contactref element="LED-2" pad="4-DIN"/>
+<wire x1="22.86" y1="36.83" x2="22.3658" y2="37.3242" width="0.635" layer="1"/>
+<wire x1="22.3658" y1="38.6852" x2="22.3658" y2="37.3242" width="0.635" layer="1"/>
+<wire x1="29.845" y1="36.195" x2="29.21" y2="36.83" width="0.635" layer="1"/>
+<wire x1="32.258" y1="36.195" x2="29.845" y2="36.195" width="0.635" layer="1"/>
+<wire x1="29.21" y1="36.83" x2="22.86" y2="36.83" width="0.635" layer="1"/>
 </signal>
 <signal name="N$2">
-<contactref element="LED-2" pad="2-DOUT"/>
-<contactref element="J1" pad="1"/>
-<wire x1="25.908" y1="37.338" x2="26.924" y2="36.322" width="0.3048" layer="1"/>
-<wire x1="32.258" y1="36.322" x2="32.385" y2="36.195" width="0.3048" layer="1" curve="90"/>
-<wire x1="32.385" y1="36.195" x2="32.893" y2="36.195" width="0.3048" layer="1"/>
-<wire x1="26.924" y1="36.322" x2="32.258" y2="36.322" width="0.3048" layer="1"/>
-<wire x1="28.4088" y1="41.2232" x2="28.3336" y2="41.148" width="0.3048" layer="1"/>
-<wire x1="28.3336" y1="41.148" x2="26.67" y2="41.148" width="0.3048" layer="1"/>
-<wire x1="26.67" y1="41.148" x2="25.908" y2="40.386" width="0.3048" layer="1"/>
-<wire x1="25.908" y1="40.386" x2="25.908" y2="37.338" width="0.3048" layer="1"/>
+<contactref element="J1" pad="2"/>
+<contactref element="LED-2" pad="1-VDD"/>
+<wire x1="32.512" y1="38.735" x2="26.6806" y2="38.735" width="0.635" layer="1"/>
+<wire x1="26.6806" y1="38.735" x2="27.2658" y2="38.6852" width="0.635" layer="1"/>
 </signal>
 <signal name="N$3">
-<contactref element="LED-2" pad="1-VDD"/>
-<contactref element="J1" pad="2"/>
-<wire x1="28.4088" y1="37.9232" x2="28.486" y2="37.846" width="0.3048" layer="1"/>
-<wire x1="28.486" y1="37.846" x2="30.226" y2="37.846" width="0.3048" layer="1"/>
-<wire x1="30.226" y1="37.846" x2="31.115" y2="38.735" width="0.3048" layer="1"/>
-<wire x1="31.115" y1="38.735" x2="33.147" y2="38.735" width="0.3048" layer="1"/>
+<contactref element="LED-2" pad="2-DOUT"/>
+<contactref element="J1" pad="3"/>
+<wire x1="27.2658" y1="41.9852" x2="26.706" y2="41.91" width="0.635" layer="1"/>
+<wire x1="26.706" y1="41.91" x2="29.21" y2="41.91" width="0.635" layer="1"/>
+<wire x1="29.21" y1="41.91" x2="29.845" y2="41.275" width="0.635" layer="1"/>
+<wire x1="29.845" y1="41.275" x2="32.258" y2="41.275" width="0.635" layer="1"/>
 </signal>
 <signal name="N$4">
-<contactref element="LED-2" pad="4-DIN"/>
-<contactref element="J1" pad="3"/>
-<wire x1="32.893" y1="41.275" x2="33.02" y2="41.148" width="0.3048" layer="1" curve="90"/>
-<wire x1="33.02" y1="41.148" x2="35.052" y2="41.148" width="0.3048" layer="1"/>
-<wire x1="35.052" y1="41.148" x2="35.56" y2="40.64" width="0.3048" layer="1"/>
-<wire x1="34.544" y1="33.782" x2="30.734" y2="33.782" width="0.3048" layer="1"/>
-<wire x1="24.384" y1="35.814" x2="23.5088" y2="36.6892" width="0.3048" layer="1"/>
-<wire x1="23.5088" y1="36.6892" x2="23.5088" y2="37.9232" width="0.3048" layer="1"/>
-<wire x1="35.56" y1="40.64" x2="35.56" y2="34.798" width="0.3048" layer="1"/>
-<wire x1="35.56" y1="34.798" x2="34.544" y2="33.782" width="0.3048" layer="1"/>
-<wire x1="30.734" y1="33.782" x2="28.702" y2="35.814" width="0.3048" layer="1"/>
-<wire x1="28.702" y1="35.814" x2="24.384" y2="35.814" width="0.3048" layer="1"/>
+<contactref element="J1" pad="4"/>
+<contactref element="LED-2" pad="3-GND"/>
+<wire x1="22.3658" y1="41.9852" x2="22.225" y2="42.126" width="0.635" layer="1"/>
+<wire x1="22.225" y1="42.126" x2="22.225" y2="43.18" width="0.635" layer="1"/>
+<wire x1="22.225" y1="43.18" x2="22.86" y2="43.815" width="0.635" layer="1"/>
+<wire x1="22.86" y1="43.815" x2="32.512" y2="43.815" width="0.635" layer="1"/>
 </signal>
 </signals>
 </board>

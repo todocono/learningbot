@@ -1003,45 +1003,47 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <plain>
 </plain>
 <instances>
-<instance part="LED-2" gate="G$1" x="66.04" y="223.52" rot="R270"/>
-<instance part="J1" gate="G$1" x="43.18" y="200.66" rot="MR180"/>
+<instance part="LED-2" gate="G$1" x="66.04" y="218.44" rot="R270"/>
+<instance part="J1" gate="G$1" x="38.1" y="220.98" rot="MR180"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="N$1" class="0">
 <segment>
-<pinref part="LED-2" gate="G$1" pin="GND"/>
-<pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="48.26" y1="195.58" x2="86.36" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="195.58" x2="86.36" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="238.76" x2="55.88" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="238.76" x2="55.88" y2="223.52" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="LED-2" gate="G$1" pin="DI"/>
+<wire x1="43.18" y1="223.52" x2="48.26" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="223.52" x2="48.26" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="231.14" x2="63.5" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="LED-2" gate="G$1" pin="DO"/>
-<wire x1="63.5" y1="210.82" x2="63.5" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="203.2" x2="63.5" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="220.98" x2="53.34" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="220.98" x2="53.34" y2="236.22" width="0.1524" layer="91"/>
+<pinref part="LED-2" gate="G$1" pin="VDD"/>
+<wire x1="53.34" y1="236.22" x2="81.28" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="236.22" x2="81.28" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="LED-2" gate="G$1" pin="VDD"/>
-<wire x1="81.28" y1="200.66" x2="81.28" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="200.66" x2="81.28" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="LED-2" gate="G$1" pin="DO"/>
+<wire x1="63.5" y1="205.74" x2="48.26" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="205.74" x2="48.26" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="48.26" y1="218.44" x2="43.18" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="LED-2" gate="G$1" pin="DI"/>
-<wire x1="63.5" y1="236.22" x2="83.82" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="236.22" x2="83.82" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="83.82" y1="198.12" x2="48.26" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="43.18" y1="215.9" x2="53.34" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="215.9" x2="53.34" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="LED-2" gate="G$1" pin="GND"/>
+<wire x1="53.34" y1="218.44" x2="55.88" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
