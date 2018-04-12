@@ -431,7 +431,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="LED-2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="WS2812B" value="WS2812B5050" x="24.1808" y="40.3352"/>
+<element name="LED-2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="WS2812B" value="WS2812B5050" x="24.8158" y="40.3352"/>
 <element name="J1" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="32.385" y="36.195" rot="R90">
 <attribute name="PROD_ID" value="CONN-09696" x="32.385" y="36.195" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -440,22 +440,22 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="J1" pad="1"/>
 <contactref element="LED-2" pad="4-DIN"/>
-<wire x1="22.225" y1="36.83" x2="21.7308" y2="37.3242" width="0.635" layer="1"/>
-<wire x1="21.7308" y1="38.6852" x2="21.7308" y2="37.3242" width="0.635" layer="1"/>
+<wire x1="22.86" y1="36.83" x2="22.3658" y2="37.3242" width="0.635" layer="1"/>
+<wire x1="22.3658" y1="38.6852" x2="22.3658" y2="37.3242" width="0.635" layer="1"/>
 <wire x1="29.845" y1="36.195" x2="29.21" y2="36.83" width="0.635" layer="1"/>
 <wire x1="32.258" y1="36.195" x2="29.845" y2="36.195" width="0.635" layer="1"/>
-<wire x1="29.21" y1="36.83" x2="22.225" y2="36.83" width="0.635" layer="1"/>
+<wire x1="29.21" y1="36.83" x2="22.86" y2="36.83" width="0.635" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="J1" pad="2"/>
 <contactref element="LED-2" pad="1-VDD"/>
 <wire x1="32.512" y1="38.735" x2="26.6806" y2="38.735" width="0.635" layer="1"/>
-<wire x1="26.6806" y1="38.735" x2="26.6308" y2="38.6852" width="0.635" layer="1"/>
+<wire x1="26.6806" y1="38.735" x2="27.2658" y2="38.6852" width="0.635" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="LED-2" pad="2-DOUT"/>
 <contactref element="J1" pad="3"/>
-<wire x1="26.6308" y1="41.9852" x2="26.706" y2="41.91" width="0.635" layer="1"/>
+<wire x1="27.2658" y1="41.9852" x2="26.706" y2="41.91" width="0.635" layer="1"/>
 <wire x1="26.706" y1="41.91" x2="29.21" y2="41.91" width="0.635" layer="1"/>
 <wire x1="29.21" y1="41.91" x2="29.845" y2="41.275" width="0.635" layer="1"/>
 <wire x1="29.845" y1="41.275" x2="32.258" y2="41.275" width="0.635" layer="1"/>
@@ -463,10 +463,10 @@ design rules under a new name.</description>
 <signal name="N$4">
 <contactref element="J1" pad="4"/>
 <contactref element="LED-2" pad="3-GND"/>
-<wire x1="21.7308" y1="41.9852" x2="21.59" y2="42.126" width="0.635" layer="1"/>
-<wire x1="21.59" y1="42.126" x2="21.59" y2="43.18" width="0.635" layer="1"/>
-<wire x1="21.59" y1="43.18" x2="22.225" y2="43.815" width="0.635" layer="1"/>
-<wire x1="22.225" y1="43.815" x2="32.512" y2="43.815" width="0.635" layer="1"/>
+<wire x1="22.3658" y1="41.9852" x2="22.225" y2="42.126" width="0.635" layer="1"/>
+<wire x1="22.225" y1="42.126" x2="22.225" y2="43.18" width="0.635" layer="1"/>
+<wire x1="22.225" y1="43.18" x2="22.86" y2="43.815" width="0.635" layer="1"/>
+<wire x1="22.86" y1="43.815" x2="32.512" y2="43.815" width="0.635" layer="1"/>
 </signal>
 </signals>
 </board>
