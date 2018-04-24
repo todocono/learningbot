@@ -144,7 +144,7 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="SparkFun-Connectors">
+<library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
@@ -2722,9 +2722,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </class>
 </classes>
 <parts>
-<part name="ULTRASONICSENSOR" library="SparkFun-Connectors" deviceset="M04" device="LOCK"/>
-<part name="SERVO2" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
-<part name="SERVO1" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
+<part name="ULTRASONICSENSOR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="M04" device="LOCK"/>
+<part name="SERVO2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="M03" device="LOCK"/>
+<part name="SERVO1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="M03" device="LOCK"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
@@ -2746,16 +2746,16 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
-<part name="LDR1" library="SparkFun-Connectors" deviceset="M04" device="LOCK"/>
+<part name="LDR1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="M04" device="LOCK"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="LDR2" library="SparkFun-Connectors" deviceset="M04" device="LOCK"/>
+<part name="LDR2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="M04" device="LOCK"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="IRSENSOR2" library="SparkFun-Connectors" deviceset="M04" device="LOCK"/>
+<part name="IRSENSOR2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="M04" device="LOCK"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="IRSENSOR1" library="SparkFun-Connectors" deviceset="M04" device="LOCK"/>
+<part name="IRSENSOR1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="M04" device="LOCK"/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY15" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
@@ -2769,7 +2769,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND20" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="SUPPLY17" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="BATTERY_CONNECTOR" library="SparkFun-Connectors" deviceset="M03" device="JST-PTH-VERT"/>
+<part name="BATTERY_CONNECTOR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="M03" device="JST-PTH-VERT"/>
 <part name="TOUCH_SENSOR_RESISTOR" library="SparkFun-Passives" deviceset="RESISTOR" device="PTH-1/4W" value="10MOhm"/>
 </parts>
 <sheets>
