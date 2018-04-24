@@ -37,7 +37,7 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
@@ -887,12 +887,13 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="45.974" y="6.5024" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="SPEAKER" library="adafruit" package="AL60P" value="SPEAKER/AL60P" x="15.2654" y="43.6118" smashed="yes">
-<attribute name="NAME" x="11.0904" y="49.9618" size="1.27" layer="25" ratio="10"/>
+<attribute name="NAME" x="12.7254" y="49.9618" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="11.3792" y="39.8018" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="ULTRASONICSENSOR" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="61.6575" y="47.8348" smashed="yes" rot="R180">
-<attribute name="NAME" x="67.4487" y="46.006" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="PROD_ID" value="CONN-09696" x="61.6575" y="47.8348" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="62.9275" y="51.0098" size="1.27" layer="27" rot="R180"/>
+<element name="ULTRASONICSENSOR" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="61.6575" y="49.8348" smashed="yes" rot="R180">
+<attribute name="NAME" x="67.4487" y="48.006" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="PROD_ID" value="CONN-09696" x="61.6575" y="49.8348" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="62.9275" y="53.0098" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="U$1" library="ArduinoNano LearningBot 3-15-18" package="ARDUINO-CLONE_NANO" value="ARDUINO-CLONE_NANO" x="54.8386" y="34.544" smashed="yes" rot="R180"/>
 <element name="DIGITAL_PUSHBUTTON" library="switch-omron" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="" x="33.1978" y="42.9768" smashed="yes" rot="R180">
@@ -909,35 +910,25 @@ design rules under a new name.</description>
 <element name="LED-6" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="WS2812B" value="WS2812B5050" x="104.4448" y="32.5882" rot="R180"/>
 <element name="LED-3" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="WS2812B" value="WS2812B5050" x="10.3538" y="56.2468" rot="R180"/>
 <element name="LED-1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="WS2812B" value="WS2812B5050" x="33.9852" y="56.2468" rot="R180"/>
-<element name="LDR1" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="97.535" y="53.055" smashed="yes" rot="R180">
-<attribute name="NAME" x="96.3412" y="56.3062" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="PROD_ID" value="CONN-09696" x="97.535" y="53.055" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="98.805" y="56.23" size="1.27" layer="27" rot="R180"/>
+<element name="LDR1" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="97.535" y="55.055" rot="R180">
+<attribute name="PROD_ID" value="CONN-09696" x="97.535" y="55.055" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="LDR2" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="24.78" y="53.055" smashed="yes" rot="R180">
-<attribute name="NAME" x="22.9512" y="56.3062" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="PROD_ID" value="CONN-09696" x="24.78" y="53.055" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="26.05" y="56.23" size="1.27" layer="27" rot="R180"/>
+<element name="LDR2" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="24.78" y="55.055" rot="R180">
+<attribute name="PROD_ID" value="CONN-09696" x="24.78" y="55.055" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="IRSENSOR2" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="51.45" y="47.8348" smashed="yes" rot="R180">
-<attribute name="NAME" x="52.1612" y="51.086" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="PROD_ID" value="CONN-09696" x="51.45" y="47.8348" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="52.72" y="51.0098" size="1.27" layer="27" rot="R180"/>
+<element name="IRSENSOR2" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="51.45" y="50.0399" smashed="yes" rot="R180">
+<attribute name="NAME" x="52.1612" y="53.2911" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="PROD_ID" value="CONN-09696" x="51.45" y="50.0399" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="52.72" y="53.2149" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="IRSENSOR1" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="71.865" y="47.8348" smashed="yes" rot="R180">
-<attribute name="NAME" x="73.2112" y="51.086" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="PROD_ID" value="CONN-09696" x="71.865" y="47.8348" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="73.135" y="51.0098" size="1.27" layer="27" rot="R180"/>
+<element name="IRSENSOR1" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="71.865" y="50.245" smashed="yes" rot="R180">
+<attribute name="NAME" x="73.2112" y="53.4962" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="PROD_ID" value="CONN-09696" x="71.865" y="50.245" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="73.135" y="53.42" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="PUSHBUTTON_RESISTOR" library="SparkFun-Passives" package="AXIAL-0.4" value="10k" x="20.955" y="31.115" smashed="yes" rot="R180">
-<attribute name="NAME" x="27.13" y="34.21" size="0.8128" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="23.241" y="31.496" size="0.8128" layer="21" font="vector" ratio="15" rot="R180"/>
-</element>
+<element name="PUSHBUTTON_RESISTOR" library="SparkFun-Passives" package="AXIAL-0.4" value="10k" x="20.955" y="31.115" rot="R180"/>
 <element name="BATTERY_CONNECTOR" library="SparkFun-Connectors" package="JST-3-PTH-VERT" value="" x="34.445" y="19.56" rot="R306.5"/>
-<element name="TOUCH_SENSOR_RESISTOR" library="SparkFun-Passives" package="AXIAL-0.4" value="10MOhm" x="69.805" y="35.625" smashed="yes" rot="R270">
-<attribute name="NAME" x="71.71" y="41.975" size="0.8128" layer="25" font="vector" ratio="15" rot="R270"/>
-<attribute name="VALUE" x="69.424" y="37.911" size="0.8128" layer="21" font="vector" ratio="15" rot="R270"/>
-</element>
+<element name="TOUCH_SENSOR_RESISTOR" library="SparkFun-Passives" package="AXIAL-0.4" value="10MOhm" x="69.805" y="35.625" rot="R270"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -966,12 +957,12 @@ design rules under a new name.</description>
 <contactref element="POTENTIOMETER" pad="1"/>
 <contactref element="U$1" pad="GND"/>
 <contactref element="POWER_SWITCH" pad="NO1"/>
-<wire x1="94.995" y1="53.182" x2="106.8948" y2="54.5968" width="0" layer="19" extent="1-1"/>
+<wire x1="94.995" y1="55.182" x2="106.8948" y2="54.5968" width="0" layer="19" extent="1-1"/>
 <wire x1="12.8038" y1="30.9382" x2="15.875" y2="31.115" width="0" layer="19" extent="1-1"/>
 <wire x1="106.8948" y1="30.9382" x2="103.789" y2="39.4952" width="0" layer="19" extent="1-1"/>
-<wire x1="12.8038" y1="54.5968" x2="22.24" y2="53.182" width="0" layer="19" extent="1-1"/>
-<wire x1="82.4252" y1="54.5968" x2="94.995" y2="53.182" width="0" layer="19" extent="1-1"/>
-<wire x1="36.4352" y1="54.5968" x2="48.91" y2="47.9618" width="0" layer="19" extent="1-1"/>
+<wire x1="12.8038" y1="54.5968" x2="22.24" y2="55.182" width="0" layer="19" extent="1-1"/>
+<wire x1="82.4252" y1="54.5968" x2="94.995" y2="55.182" width="0" layer="19" extent="1-1"/>
+<wire x1="36.4352" y1="54.5968" x2="48.91" y2="50.1669" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="ULTRASONICSENSOR" pad="1"/>
@@ -1000,7 +991,7 @@ design rules under a new name.</description>
 <signal name="TRIG_PIN">
 <contactref element="ULTRASONICSENSOR" pad="2"/>
 <contactref element="U$1" pad="D7"/>
-<wire x1="49.7586" y1="20.574" x2="59.1175" y2="47.9618" width="0" layer="19" extent="1-1"/>
+<wire x1="49.7586" y1="20.574" x2="59.1175" y2="49.9618" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SERVO2_PIN">
 <contactref element="SERVO2" pad="3"/>
@@ -1010,42 +1001,42 @@ design rules under a new name.</description>
 <signal name="LDR2_AO">
 <contactref element="LDR2" pad="4"/>
 <contactref element="U$1" pad="A3"/>
-<wire x1="17.16" y1="53.182" x2="64.9986" y2="23.114" width="0" layer="19" extent="1-1"/>
+<wire x1="17.16" y1="55.182" x2="64.9986" y2="23.114" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LDR1_DO">
 <contactref element="LDR1" pad="3"/>
 <contactref element="U$1" pad="D13"/>
-<wire x1="64.9986" y1="7.874" x2="92.455" y2="52.928" width="0" layer="19" extent="1-1"/>
+<wire x1="64.9986" y1="7.874" x2="92.455" y2="54.928" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LDR2_DO">
 <contactref element="LDR2" pad="3"/>
 <contactref element="U$1" pad="D4"/>
-<wire x1="19.7" y1="52.928" x2="49.7586" y2="28.194" width="0" layer="19" extent="1-1"/>
+<wire x1="19.7" y1="54.928" x2="49.7586" y2="28.194" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LDR1_AO">
 <contactref element="LDR1" pad="4"/>
 <contactref element="U$1" pad="A0"/>
-<wire x1="64.9986" y1="15.494" x2="89.915" y2="53.182" width="0" layer="19" extent="1-1"/>
+<wire x1="64.9986" y1="15.494" x2="89.915" y2="55.182" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IR_SENSOR2_AO">
 <contactref element="IRSENSOR2" pad="4"/>
 <contactref element="U$1" pad="A2"/>
-<wire x1="64.9986" y1="20.574" x2="43.83" y2="47.9618" width="0" layer="19" extent="1-1"/>
+<wire x1="64.9986" y1="20.574" x2="43.83" y2="50.1669" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IR_SENSOR2_DO">
 <contactref element="IRSENSOR2" pad="3"/>
 <contactref element="U$1" pad="D5"/>
-<wire x1="49.7586" y1="25.654" x2="46.37" y2="47.7078" width="0" layer="19" extent="1-1"/>
+<wire x1="49.7586" y1="25.654" x2="46.37" y2="49.9129" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IR_SENSOR1_DO">
 <contactref element="IRSENSOR1" pad="3"/>
 <contactref element="U$1" pad="D12"/>
-<wire x1="49.7586" y1="7.874" x2="66.785" y2="47.7078" width="0" layer="19" extent="1-1"/>
+<wire x1="49.7586" y1="7.874" x2="66.785" y2="50.118" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IR_SENSOR1_AO">
 <contactref element="IRSENSOR1" pad="4"/>
 <contactref element="U$1" pad="A1"/>
-<wire x1="64.9986" y1="18.034" x2="64.245" y2="47.9618" width="0" layer="19" extent="1-1"/>
+<wire x1="64.9986" y1="18.034" x2="64.245" y2="50.372" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPEAKERPIN">
 <contactref element="SPEAKER" pad="2"/>
@@ -1115,7 +1106,7 @@ design rules under a new name.</description>
 <signal name="ECHO_PIN">
 <contactref element="U$1" pad="D6"/>
 <contactref element="ULTRASONICSENSOR" pad="3"/>
-<wire x1="49.7586" y1="23.114" x2="56.5775" y2="47.7078" width="0" layer="19" extent="1-1"/>
+<wire x1="49.7586" y1="23.114" x2="56.5775" y2="49.7078" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CAP_TOUCH_SEND_PIN">
 <contactref element="U$1" pad="A5"/>
