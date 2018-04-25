@@ -207,7 +207,7 @@
 <hole x="70.88" y="44.275" drill="3.1"/>
 </plain>
 <libraries>
-<library name="SparkFun-Connectors">
+<library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
@@ -877,18 +877,18 @@ design rules under a new name.</description>
 <elements>
 <element name="LED-5" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="WS2812B" value="WS2812B5050" x="104.4448" y="56.2468" rot="R180"/>
 <element name="POTENTIOMETER" library="pot" package="3RP/1610N-VERTICAL" value="" x="82.789" y="39.4952" rot="R315"/>
-<element name="SERVO1" library="SparkFun-Connectors" package="1X03_LOCK" value="" x="71.374" y="7.7724" smashed="yes" rot="R90">
+<element name="SERVO1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X03_LOCK" value="" x="71.374" y="7.7724" smashed="yes" rot="R90">
 <attribute name="NAME" x="74.6252" y="7.6962" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="74.549" y="6.5024" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="SERVO2" library="SparkFun-Connectors" package="1X03_LOCK" value="" x="42.799" y="7.7724" smashed="yes" rot="R90">
+<element name="SERVO2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X03_LOCK" value="" x="42.799" y="7.7724" smashed="yes" rot="R90">
 <attribute name="NAME" x="40.9702" y="7.6962" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="45.974" y="6.5024" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="SPEAKER" library="adafruit" package="AL60P" value="SPEAKER/AL60P" x="15.2654" y="43.6118" smashed="yes">
 <attribute name="NAME" x="11.0904" y="49.9618" size="1.27" layer="25" ratio="10"/>
 </element>
-<element name="ULTRASONICSENSOR" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="61.6575" y="47.8348" smashed="yes" rot="R180">
+<element name="ULTRASONICSENSOR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04_LOCK" value="" x="61.6575" y="47.8348" smashed="yes" rot="R180">
 <attribute name="NAME" x="67.4487" y="46.006" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="PROD_ID" value="CONN-09696" x="61.6575" y="47.8348" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="62.9275" y="51.0098" size="1.27" layer="27" rot="R180"/>
@@ -906,22 +906,22 @@ design rules under a new name.</description>
 <element name="LED-2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="WS2812B" value="WS2812B5050" x="31.3538" y="28.5882" rot="R180"/>
 <element name="LED-6" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="WS2812B" value="WS2812B5050" x="82.4448" y="28.5882" rot="R180"/>
 <element name="LED-3" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="WS2812B" value="WS2812B5050" x="10.3538" y="56.2468" rot="R180"/>
-<element name="LDR1" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="97.535" y="53.055" smashed="yes" rot="R180">
+<element name="LDR1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04_LOCK" value="" x="97.535" y="53.055" smashed="yes" rot="R180">
 <attribute name="NAME" x="96.3412" y="56.3062" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="PROD_ID" value="CONN-09696" x="97.535" y="53.055" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="98.805" y="56.23" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="LDR2" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="24.78" y="53.055" smashed="yes" rot="R180">
+<element name="LDR2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04_LOCK" value="" x="24.78" y="53.055" smashed="yes" rot="R180">
 <attribute name="NAME" x="22.9512" y="56.3062" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="PROD_ID" value="CONN-09696" x="24.78" y="53.055" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="26.05" y="56.23" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="IRSENSOR2" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="51.45" y="47.8348" smashed="yes" rot="R180">
+<element name="IRSENSOR2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04_LOCK" value="" x="51.45" y="47.8348" smashed="yes" rot="R180">
 <attribute name="NAME" x="52.1612" y="51.086" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="PROD_ID" value="CONN-09696" x="51.45" y="47.8348" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="52.72" y="51.0098" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="IRSENSOR1" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="71.865" y="47.8348" smashed="yes" rot="R180">
+<element name="IRSENSOR1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04_LOCK" value="" x="71.865" y="47.8348" smashed="yes" rot="R180">
 <attribute name="NAME" x="73.2112" y="51.086" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="PROD_ID" value="CONN-09696" x="71.865" y="47.8348" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="73.135" y="51.0098" size="1.27" layer="27" rot="R180"/>
@@ -930,7 +930,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="27.13" y="34.21" size="0.8128" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="23.241" y="31.496" size="0.8128" layer="21" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="BATTERY_CONNECTOR" library="SparkFun-Connectors" package="JST-3-PTH-VERT" value="" x="34.445" y="19.56" rot="R306.5"/>
+<element name="BATTERY_CONNECTOR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="JST-3-PTH-VERT" value="" x="34.445" y="19.56" rot="R306.5"/>
 <element name="TOUCH_SENSOR_RESISTOR" library="SparkFun-Passives" package="AXIAL-0.4" value="10MOhm" x="69.805" y="35.625" smashed="yes" rot="R270">
 <attribute name="NAME" x="71.71" y="41.975" size="0.8128" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="69.424" y="37.911" size="0.8128" layer="21" font="vector" ratio="15" rot="R270"/>
