@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.0">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3502,19 +3502,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="76.2" y1="124.46" x2="106.68" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N.C." class="0">
-<segment>
-<wire x1="121.92" y1="66.04" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="S1" gate="1" pin="S"/>
-<label x="119.38" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="GND20" gate="G$1" pin="GND-ISO"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="139.7" y1="104.14" x2="144.78" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="104.14" x2="144.78" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SERVO2_PIN" class="0">
 <segment>
 <pinref part="SERVO2" gate="J$1" pin="3"/>
@@ -3731,7 +3718,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="GND-ISO" class="0">
+<net name="GND" class="0">
 <segment>
 <pinref part="VR1" gate="G$1" pin="A"/>
 <wire x1="172.72" y1="81.28" x2="172.72" y2="86.36" width="0.1524" layer="91"/>
@@ -3813,6 +3800,17 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="U$1" gate="G$1" pin="GND2"/>
 <wire x1="101.6" y1="109.22" x2="106.68" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="G$1" pin="GND-ISO"/>
+</segment>
+<segment>
+<wire x1="121.92" y1="66.04" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="S1" gate="1" pin="S"/>
+<label x="119.38" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="GND20" gate="G$1" pin="GND-ISO"/>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="139.7" y1="104.14" x2="144.78" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="104.14" x2="144.78" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BUTTON1" class="0">
