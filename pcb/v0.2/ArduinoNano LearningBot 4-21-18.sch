@@ -3302,9 +3302,9 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND20" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="SUPPLY17" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="BAT" library="SparkFun-Connectors" deviceset="M03" device="POLAR"/>
+<part name="BAT" library="SparkFun-Connectors" deviceset="M03" device="POLAR" value="BAT"/>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="PTH-1/4W" value="10MOhm"/>
-<part name="S1" library="ArduinoNano LearningBot 4-21-18" deviceset="SWITCH_320-938" device=""/>
+<part name="S1" library="ArduinoNano LearningBot 4-21-18" deviceset="SWITCH_320-938" device="" value="POWER"/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
