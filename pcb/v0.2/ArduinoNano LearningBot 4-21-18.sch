@@ -3262,6 +3262,37 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
+<library name="CapTouch">
+<packages>
+<package name="TOUCH1">
+<smd name="P$1" x="0" y="0" dx="9" dy="9" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PIN">
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<rectangle x1="0" y1="-0.254" x2="1.524" y2="0.254" layer="94"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TOUCHSENSOR">
+<gates>
+<gate name="G$2" symbol="PIN" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="TOUCH1">
+<connects>
+<connect gate="G$2" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3320,6 +3351,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
+<part name="U$2" library="CapTouch" deviceset="TOUCHSENSOR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3413,6 +3445,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="GND15" gate="G$1" x="101.6" y="96.52" smashed="yes">
 <attribute name="VALUE" x="104.14" y="96.52" size="1.778" layer="96" display="off"/>
 </instance>
+<instance part="U$2" gate="G$2" x="205.74" y="63.5"/>
 </instances>
 <busses>
 </busses>
@@ -3634,13 +3667,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="200.66" y1="114.3" x2="200.66" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="LED-1" class="0">
-<segment>
-<pinref part="LED1" gate="G$1" pin="DI"/>
-<wire x1="175.26" y1="198.12" x2="200.66" y2="198.12" width="0.1524" layer="91"/>
-<label x="175.26" y="198.12" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$9" class="0">
 <segment>
 <wire x1="111.76" y1="76.2" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
@@ -3706,8 +3732,8 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="139.7" y1="116.84" x2="162.56" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="116.84" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<label x="203.2" y="63.5" size="1.778" layer="95"/>
 <wire x1="162.56" y1="63.5" x2="203.2" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$2" pin="1"/>
 </segment>
 </net>
 <net name="CAP_TOUCH_RECEIVE_PIN" class="0">
@@ -3822,6 +3848,11 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="U$1" gate="G$1" pin="D9"/>
 <wire x1="73.66" y1="129.54" x2="106.68" y2="129.54" width="0.1524" layer="91"/>
 <label x="68.58" y="129.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="G$1" pin="DI"/>
+<wire x1="175.26" y1="198.12" x2="200.66" y2="198.12" width="0.1524" layer="91"/>
+<label x="175.26" y="198.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$6" class="0">
