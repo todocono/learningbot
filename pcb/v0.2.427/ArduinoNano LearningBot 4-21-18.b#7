@@ -872,11 +872,13 @@ design rules under a new name.</description>
 <signal name="SENSOR4">
 <contactref element="SENSOR4" pad="4"/>
 <contactref element="U$1" pad="A3"/>
-<wire x1="13.38" y1="45.127" x2="13.38" y2="39.96" width="0.4064" layer="16"/>
-<wire x1="13.38" y1="39.96" x2="15.24" y2="38.1" width="0.4064" layer="16"/>
-<wire x1="20.955" y1="38.1" x2="24.13" y2="34.925" width="0.4064" layer="16"/>
-<wire x1="15.24" y1="38.1" x2="20.955" y2="38.1" width="0.4064" layer="16"/>
-<wire x1="24.13" y1="34.925" x2="60.66" y2="21.114" width="0" layer="19" extent="16-16"/>
+<wire x1="13.38" y1="45.127" x2="13.335" y2="45.082" width="0.4064" layer="16"/>
+<wire x1="13.335" y1="45.082" x2="13.335" y2="43.815" width="0.4064" layer="16"/>
+<wire x1="13.335" y1="43.815" x2="14.605" y2="42.545" width="0.4064" layer="16"/>
+<wire x1="42.545" y1="42.545" x2="43.18" y2="43.18" width="0.4064" layer="16"/>
+<wire x1="43.18" y1="43.18" x2="49.53" y2="43.18" width="0.4064" layer="16"/>
+<wire x1="14.605" y1="42.545" x2="42.545" y2="42.545" width="0.4064" layer="16"/>
+<wire x1="49.53" y1="43.18" x2="60.66" y2="21.114" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="LDR1_DO">
 <contactref element="SENSOR1" pad="3"/>
@@ -894,14 +896,7 @@ design rules under a new name.</description>
 <signal name="LDR2_DO">
 <contactref element="SENSOR4" pad="3"/>
 <contactref element="U$1" pad="D4"/>
-<wire x1="15.92" y1="44.873" x2="15.92" y2="43.225" width="0.4064" layer="16"/>
-<wire x1="15.92" y1="43.225" x2="15.875" y2="43.18" width="0.4064" layer="16"/>
-<wire x1="15.875" y1="43.18" x2="19.685" y2="39.37" width="0.4064" layer="16"/>
-<wire x1="19.685" y1="39.37" x2="21.59" y2="39.37" width="0.4064" layer="16"/>
-<wire x1="21.59" y1="39.37" x2="27.305" y2="33.655" width="0.4064" layer="16"/>
-<wire x1="27.305" y1="33.655" x2="31.75" y2="33.655" width="0.4064" layer="16"/>
-<wire x1="31.75" y1="33.655" x2="39.211" y2="26.194" width="0.4064" layer="16"/>
-<wire x1="39.211" y1="26.194" x2="45.42" y2="26.194" width="0.4064" layer="16"/>
+<wire x1="15.92" y1="44.873" x2="45.42" y2="26.194" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SENSOR1">
 <contactref element="SENSOR1" pad="4"/>
@@ -1014,11 +1009,16 @@ design rules under a new name.</description>
 <signal name="BUTTON">
 <contactref element="BUTTON" pad="1"/>
 <contactref element="U$1" pad="D8"/>
-<wire x1="13.2995375" y1="35.897428125" x2="13.2995375" y2="32.4204625" width="0.4064" layer="16"/>
-<wire x1="24.765" y1="20.955" x2="34.925" y2="20.955" width="0.4064" layer="16"/>
-<wire x1="34.925" y1="20.955" x2="39.846" y2="16.034" width="0.4064" layer="16"/>
-<wire x1="39.846" y1="16.034" x2="45.42" y2="16.034" width="0.4064" layer="16"/>
-<wire x1="13.2995375" y1="32.4204625" x2="24.765" y2="20.955" width="0.4064" layer="16"/>
+<wire x1="13.2995375" y1="35.897428125" x2="13.335" y2="35.861965625" width="0.4064" layer="1"/>
+<wire x1="13.335" y1="35.861965625" x2="13.335" y2="32.385" width="0.4064" layer="1"/>
+<wire x1="13.335" y1="32.385" x2="18.415" y2="27.305" width="0.4064" layer="1"/>
+<via x="37.465" y="22.225" extent="1-16" drill="0.35" diameter="0.6" shape="square"/>
+<wire x1="18.415" y1="27.305" x2="32.385" y2="27.305" width="0.4064" layer="1"/>
+<wire x1="32.385" y1="27.305" x2="37.465" y2="22.225" width="0.4064" layer="1"/>
+<wire x1="37.465" y1="22.225" x2="40.005" y2="19.685" width="0.4064" layer="16"/>
+<wire x1="40.005" y1="19.685" x2="40.005" y2="17.78" width="0.4064" layer="16"/>
+<wire x1="40.005" y1="17.78" x2="41.751" y2="16.034" width="0.4064" layer="16"/>
+<wire x1="41.751" y1="16.034" x2="45.42" y2="16.034" width="0.4064" layer="16"/>
 </signal>
 <signal name="POTPIN">
 <contactref element="VR1" pad="2"/>
@@ -1109,8 +1109,6 @@ design rules under a new name.</description>
 <wire x1="102.45" y1="22.35" x2="99.82" y2="22.35" width="0.4064" layer="1"/>
 <wire x1="99.82" y1="22.35" x2="99.06" y2="21.59" width="0.4064" layer="1"/>
 <wire x1="99.06" y1="21.59" x2="99.06" y2="20.32" width="0.4064" layer="1"/>
-<wire x1="30.2408" y1="31" x2="36.910196875" y2="6.8622" width="0" layer="19" extent="1-1"/>
-<wire x1="15.407896875" y1="40.5921" x2="18.46" y2="45.127" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LEDS">
 <contactref element="U$1" pad="D9"/>

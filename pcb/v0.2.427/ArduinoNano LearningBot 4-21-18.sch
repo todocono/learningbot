@@ -3507,8 +3507,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="BUTTON" gate="1" pin="P1"/>
 <wire x1="30.48" y1="96.52" x2="30.48" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="96.52" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="BUTTON" gate="1" pin="P"/>
-<wire x1="38.1" y1="99.06" x2="38.1" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY15" gate="G$1" pin="VCC"/>
@@ -3721,12 +3719,13 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="TOUCH" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="A5"/>
-<wire x1="139.7" y1="116.84" x2="162.56" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="116.84" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="63.5" x2="203.2" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="TOUCH" gate="G$2" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="A5"/>
+<wire x1="139.7" y1="116.84" x2="162.56" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="63.5" x2="162.56" y2="116.84" width="0.1524" layer="91"/>
+<junction x="162.56" y="63.5"/>
 </segment>
 </net>
 <net name="CAP_TOUCH_RECEIVE_PIN" class="0">
@@ -3866,7 +3865,38 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </sheet>
 </sheets>
 <errors>
-<approved hash="101,1,142.24,0,SWITCH-3,S,,,,"/>
+<approved hash="102,1,144.78,76.2,GND-ISO,GND,,,,"/>
+<approved hash="102,1,172.72,81.28,GND-ISO,GND,,,,"/>
+<approved hash="102,1,190.5,76.2,GND-ISO,GND,,,,"/>
+<approved hash="102,1,190.5,104.14,GND-ISO,GND,,,,"/>
+<approved hash="102,1,190.5,134.62,GND-ISO,GND,,,,"/>
+<approved hash="102,1,190.5,162.56,GND-ISO,GND,,,,"/>
+<approved hash="102,1,83.82,180.34,GND-ISO,GND,,,,"/>
+<approved hash="102,1,83.82,162.56,GND-ISO,GND,,,,"/>
+<approved hash="102,1,60.96,144.78,GND-ISO,GND,,,,"/>
+<approved hash="102,1,60.96,114.3,GND-ISO,GND,,,,"/>
+<approved hash="102,1,60.96,96.52,GND-ISO,GND,,,,"/>
+<approved hash="102,1,60.96,78.74,GND-ISO,GND,,,,"/>
+<approved hash="102,1,60.96,66.04,GND-ISO,GND,,,,"/>
+<approved hash="102,1,60.96,48.26,GND-ISO,GND,,,,"/>
+<approved hash="102,1,205.74,40.64,GND-ISO,GND,,,,"/>
+<approved hash="102,1,101.6,99.06,GND-ISO,GND,,,,"/>
+<approved hash="102,1,106.68,76.2,GND-ISO,GND,,,,"/>
+<approved hash="104,1,218.44,106.68,LED3,VDD,VCC,,,"/>
+<approved hash="104,1,218.44,165.1,LED1,VDD,VCC,,,"/>
+<approved hash="104,1,218.44,78.74,LED4,VDD,VCC,,,"/>
+<approved hash="104,1,218.44,137.16,LED2,VDD,VCC,,,"/>
+<approved hash="113,1,34.8827,80.9904,ULTRA,,,,,"/>
+<approved hash="113,1,34.8827,118.4,SERVO2,,,,,"/>
+<approved hash="113,1,34.8827,135.6,SERVO1,,,,,"/>
+<approved hash="113,1,171.302,91.44,VR1,,,,,"/>
+<approved hash="113,1,43.18,101.305,BUTTON,,,,,"/>
+<approved hash="113,1,34.8827,177.51,SENSOR1,,,,,"/>
+<approved hash="113,1,34.8827,45.4304,SENSOR4,,,,,"/>
+<approved hash="113,1,34.8827,63.2104,SENSOR3,,,,,"/>
+<approved hash="113,1,34.8827,159.73,SENSOR2,,,,,"/>
+<approved hash="113,1,98.3827,77.1804,BAT,,,,,"/>
+<approved hash="113,1,110.785,60.96,S1,,,,,"/>
 </errors>
 </schematic>
 </drawing>

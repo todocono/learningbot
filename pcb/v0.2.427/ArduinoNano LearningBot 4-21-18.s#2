@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.0">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3352,7 +3352,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="TOUCH" library="CapTouch" deviceset="TOUCHSENSOR" device=""/>
-<part name="GND16" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
+<part name="GND" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3449,8 +3449,8 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="TOUCH" gate="G$2" x="205.74" y="63.5" smashed="yes">
 <attribute name="NAME" x="208.28" y="62.738" size="1.524" layer="95"/>
 </instance>
-<instance part="GND16" gate="G$1" x="101.6" y="73.66" smashed="yes">
-<attribute name="VALUE" x="104.14" y="73.66" size="1.778" layer="96" display="off"/>
+<instance part="GND" gate="G$1" x="106.68" y="73.66" smashed="yes">
+<attribute name="VALUE" x="109.22" y="73.66" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -3660,12 +3660,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="LED3" gate="G$1" pin="DI"/>
-<wire x1="200.66" y1="127" x2="200.66" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="LED3" gate="G$1" pin="DO"/>
@@ -3714,12 +3708,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="LED1" gate="G$1" pin="DO"/>
 <pinref part="LED2" gate="G$1" pin="DI"/>
 <wire x1="200.66" y1="157.48" x2="200.66" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="LED2" gate="G$1" pin="DO"/>
-<wire x1="200.66" y1="129.54" x2="200.66" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ECHO_PIN" class="0">
@@ -3838,6 +3826,11 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="139.7" y1="104.14" x2="144.78" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="104.14" x2="144.78" y2="76.2" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="BAT" gate="J$1" pin="3"/>
+<pinref part="GND" gate="G$1" pin="GND-ISO"/>
+<wire x1="106.68" y1="76.2" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="BUTTON1" class="0">
 <segment>
@@ -3862,10 +3855,11 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="38.1" y1="134.62" x2="106.68" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND-ISO" class="0">
+<net name="N$1" class="0">
 <segment>
-<pinref part="BAT" gate="J$1" pin="3"/>
-<pinref part="GND16" gate="G$1" pin="GND-ISO"/>
+<pinref part="LED2" gate="G$1" pin="DO"/>
+<pinref part="LED3" gate="G$1" pin="DI"/>
+<wire x1="200.66" y1="129.54" x2="200.66" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
