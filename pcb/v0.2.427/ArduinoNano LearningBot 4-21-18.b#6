@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1968.50394" unitdist="mil" unit="mil" style="lines" multiple="10" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mil" unit="mm" style="lines" multiple="10" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -190,13 +190,41 @@
 <wire x1="13.7101" y1="18.3978" x2="13.7101" y2="18.3973" width="0.001" layer="20" curve="180"/>
 <hole x="53" y="52" drill="3.1"/>
 <hole x="25.88" y="16.275" drill="3.1"/>
-<hole x="81.88" y="16.275" drill="3.1"/>
-<text x="56" y="10" size="1.778" layer="21" rot="R90">LearningBot v0.2
-23/4/18
-Nick &amp; Rudi</text>
+<hole x="80.102" y="15.894" drill="3.1"/>
+<text x="56" y="10" size="1.778" layer="26" rot="R90">LearningBot v0.2.18427
+KodingKreators
+Designed by Nick</text>
 <text x="37" y="28" size="1.778" layer="21">+</text>
-<text x="82.55" y="14.605" size="1.27" layer="25" rot="SR135">PWR SWITCH</text>
+<text x="79.0194" y="14.859" size="1.27" layer="25" rot="SR135">PWR SWITCH</text>
 <text x="54.61" y="1.905" size="1.27" layer="25" rot="SR180">USB</text>
+<text x="67.7164" y="9.2202" size="0.8128" layer="25" rot="SR225">G</text>
+<text x="66.1162" y="7.5438" size="0.8128" layer="25" rot="SR225">V</text>
+<text x="63.881" y="5.2324" size="0.8128" layer="25" rot="SR225">S</text>
+<text x="72.347771875" y="36.06721875" size="0.8128" layer="25" rot="SR180">G</text>
+<text x="69.7435" y="36.157021875" size="0.8128" layer="25" rot="SR180">V</text>
+<text x="67.175146875" y="36.17498125" size="0.8128" layer="25" rot="SR180">S</text>
+<text x="40.2082" y="17.5006" size="0.8128" layer="25" rot="SR135">G</text>
+<text x="36.8808" y="20.955" size="0.8128" layer="25" rot="SR135">V</text>
+<text x="21.2598" y="13.7668" size="0.8128" layer="25">check connector orientation</text>
+<text x="38.9636" y="47.4726" size="0.8128" layer="25" rot="SR180">G</text>
+<text x="41.4274" y="47.4726" size="0.8128" layer="25" rot="SR180">V</text>
+<text x="33.9852" y="47.4726" size="0.8128" layer="25" rot="SR180">S</text>
+<text x="36.6522" y="47.4726" size="0.8128" layer="25" rot="SR180">D</text>
+<text x="70.8914" y="47.498" size="0.8128" layer="25" rot="SR180">G</text>
+<text x="73.3552" y="47.498" size="0.8128" layer="25" rot="SR180">V</text>
+<text x="65.913" y="47.498" size="0.8128" layer="25" rot="SR180">S</text>
+<text x="68.58" y="47.498" size="0.8128" layer="25" rot="SR180">D</text>
+<text x="90.9574" y="47.4726" size="0.8128" layer="25" rot="SR180">G</text>
+<text x="93.4212" y="47.4726" size="0.8128" layer="25" rot="SR180">V</text>
+<text x="85.979" y="47.4726" size="0.8128" layer="25" rot="SR180">S</text>
+<text x="88.646" y="47.4726" size="0.8128" layer="25" rot="SR180">D</text>
+<text x="49.3268" y="50.3682" size="0.8128" layer="25" rot="SR180">G</text>
+<text x="56.8706" y="50.3936" size="0.8128" layer="25" rot="SR180">V</text>
+<text x="54.4068" y="50.4698" size="0.8128" layer="25" rot="SR180">T</text>
+<text x="52.0954" y="50.3936" size="0.8128" layer="25" rot="SR180">E</text>
+<text x="76.6318" y="44.5516" size="0.8128" layer="25" rot="SR225">G</text>
+<text x="69.342" y="37.338" size="0.8128" layer="25" rot="SR225">V</text>
+<text x="72.9996" y="40.9702" size="0.8128" layer="25" rot="SR225">S</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
@@ -775,13 +803,13 @@ design rules under a new name.</description>
 <attribute name="NAME" x="90.61151875" y="24.80505" size="1.27" layer="25" rot="SR225"/>
 <attribute name="VALUE" x="75.2380125" y="49.72051875" size="1.27" layer="27" rot="SR225"/>
 </element>
-<element name="SERVO1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X03_LOCK" value="" x="69" y="6.7724" smashed="yes" rot="SR135">
-<attribute name="NAME" x="71.987825" y="7.7474625" size="1.27" layer="25" ratio="10" rot="SR135"/>
-<attribute name="VALUE" x="72.1430875" y="8.1194375" size="1.27" layer="27" rot="SR135"/>
+<element name="SERVO1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X03_LOCK" value="" x="69.1016" y="7.001" smashed="yes" rot="SR225">
+<attribute name="NAME" x="70.9205375" y="6.382025" size="1.27" layer="25" ratio="10" rot="SR225"/>
+<attribute name="VALUE" x="67.7545625" y="10.1440875" size="1.27" layer="27" rot="SR225"/>
 </element>
-<element name="SERVO2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X03_LOCK" value="" x="37" y="6.7724" smashed="yes" rot="SR45">
-<attribute name="NAME" x="38.82795625" y="13.09168125" size="1.27" layer="25" ratio="10" rot="SR225"/>
-<attribute name="VALUE" x="38.3470375" y="3.6293125" size="1.27" layer="27" rot="SR45"/>
+<element name="SERVO2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X03_LOCK" value="" x="40.6576" y="3.445" smashed="yes" rot="SR135">
+<attribute name="NAME" x="40.00251875" y="1.43755625" size="1.27" layer="25" ratio="10" rot="SR135"/>
+<attribute name="VALUE" x="43.8006875" y="4.7920375" size="1.27" layer="27" rot="SR135"/>
 </element>
 <element name="SPEAKER" library="adafruit" package="AL60P" value="SPEAKER/AL60P" x="34" y="31" smashed="yes" rot="SR0">
 <attribute name="NAME" x="38.08" y="24.65" size="1.27" layer="25" ratio="10" rot="SR180"/>
@@ -832,7 +860,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="70.79" y="28.815" size="1.27" layer="25" ratio="15" rot="SR180"/>
 <attribute name="VALUE" x="70.631" y="29.816" size="0.8128" layer="21" font="vector" ratio="15" rot="SR180"/>
 </element>
-<element name="S1" library="ArduinoNano LearningBot 4-21-18" package="PS22F03" value="" x="72" y="15" rot="R45"/>
+<element name="S1" library="ArduinoNano LearningBot 4-21-18" package="PS22F03" value="" x="71.0348" y="13.7046" rot="R45"/>
 <element name="TOUCH" library="CapTouch" package="TOUCH1" value="TOUCHSENSOR" x="97" y="37" smashed="yes" rot="SR45"/>
 </elements>
 <signals>
@@ -867,7 +895,7 @@ design rules under a new name.</description>
 <signal name="SERVO2_PIN">
 <contactref element="SERVO2" pad="3"/>
 <contactref element="U$1" pad="D10"/>
-<wire x1="40.502296875" y1="10.454303125" x2="41.00199375" y2="10.954" width="0.4064" layer="16"/>
+<wire x1="36.97569375" y1="6.947296875" x2="41.00199375" y2="10.954" width="0.4064" layer="16"/>
 <wire x1="41.00199375" y1="10.954" x2="45.42" y2="10.954" width="0.4064" layer="16"/>
 </signal>
 <signal name="SENSOR4">
@@ -991,7 +1019,7 @@ design rules under a new name.</description>
 <wire x1="56.515" y1="3.81" x2="68.58" y2="3.81" width="0.4064" layer="16"/>
 <wire x1="68.58" y1="3.81" x2="71.12" y2="6.35" width="0.4064" layer="16"/>
 <wire x1="71.12" y1="6.35" x2="71.12" y2="14.08394375" width="0.4064" layer="16"/>
-<wire x1="71.12" y1="14.08394375" x2="71.101971875" y2="14.101971875" width="0.4064" layer="16"/>
+<wire x1="71.12" y1="14.08394375" x2="70.136771875" y2="12.806571875" width="0.4064" layer="16"/>
 <contactref element="BAT" pad="1"/>
 <wire x1="36.941840625" y1="10.271840625" x2="33.445" y2="18.56" width="0" layer="19" extent="16-16"/>
 </signal>
@@ -1005,7 +1033,7 @@ design rules under a new name.</description>
 <wire x1="50.165" y1="41.91" x2="60.184" y2="41.91" width="0.4064" layer="1"/>
 <wire x1="60.184" y1="41.91" x2="60.66" y2="41.434" width="0.4064" layer="1"/>
 <contactref element="S1" pad="NO1"/>
-<wire x1="48.26" y1="23.495" x2="68.856909375" y2="16.3470375" width="0" layer="19" extent="1-1"/>
+<wire x1="48.26" y1="23.495" x2="67.891709375" y2="15.0516375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUTTON">
 <contactref element="BUTTON" pad="1"/>
@@ -1120,8 +1148,8 @@ design rules under a new name.</description>
 <wire x1="30.2408" y1="31" x2="45.42" y2="33.814" width="0" layer="19" extent="1-1"/>
 <wire x1="11.305" y1="22.35" x2="15.407896875" y2="40.5921" width="0" layer="19" extent="1-1"/>
 <wire x1="99.82" y1="22.35" x2="90.46" y2="45.127" width="0" layer="19" extent="1-1"/>
-<wire x1="36.910196875" y1="6.8622" x2="30.2408" y2="31" width="0" layer="19" extent="1-1"/>
-<wire x1="68.910196875" y1="6.682596875" x2="36.910196875" y2="6.8622" width="0" layer="19" extent="1-1"/>
+<wire x1="40.567796875" y1="3.355196875" x2="30.2408" y2="31" width="0" layer="19" extent="1-1"/>
+<wire x1="69.1914" y1="6.911196875" x2="40.567796875" y2="3.355196875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LEDS">
 <contactref element="U$1" pad="D9"/>
@@ -1134,7 +1162,7 @@ design rules under a new name.</description>
 <signal name="N$6">
 <contactref element="SERVO1" pad="3"/>
 <contactref element="U$1" pad="D11"/>
-<wire x1="65.31809375" y1="10.274696875" x2="65.31809375" y2="5.62809375" width="0.4064" layer="1"/>
+<wire x1="65.5993" y1="3.31909375" x2="65.31809375" y2="5.62809375" width="0.4064" layer="1"/>
 <wire x1="65.31809375" y1="5.62809375" x2="62.865" y2="3.175" width="0.4064" layer="1"/>
 <wire x1="62.865" y1="3.175" x2="57.785" y2="3.175" width="0.4064" layer="1"/>
 <wire x1="57.785" y1="3.175" x2="52.705" y2="8.255" width="0.4064" layer="1"/>
