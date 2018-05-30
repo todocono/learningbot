@@ -17,6 +17,10 @@
  * Light Follower - When provided enough light, Learningbot will turn in the direction
  * of that light soure and follow it.
  * 
+ * To change state, simple push the on-board push button.
+ * In each of these states, the buzzer will turn on when turning or moving backwards.
+ * The potentiometer affects the buzzer's pitch.
+ * 
  * Neopixel Color Indication:
  * Pink - Initial state
  * Green - Forward
