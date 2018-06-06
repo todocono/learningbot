@@ -307,7 +307,7 @@ void barrierDetector() {
       forward();
       noTone(Buzzer);
     }
-    else {
+    else if (abs(averageDistance) <= 15 && distance <= 15) {
       buzzer();
       left();
       //alternateLeftRightandBackward();
