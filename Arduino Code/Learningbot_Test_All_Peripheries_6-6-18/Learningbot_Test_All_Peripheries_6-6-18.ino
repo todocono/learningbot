@@ -100,9 +100,9 @@ void setup() {
   Serial.begin(9600);
   //This next bit of code is to help the arduino turn ALL neopixels pink from the getgo
   NeopixelsHigh(100, 0, 100, 0, numofLEDs); //pink
-  delay(10);
+  //delay(10);
   NeopixelsHigh(100, 0, 100, 0, numofLEDs); //pink
-  delay(10);
+  //delay(10);
   NeopixelsHigh(100, 0, 100, 0, numofLEDs); //pink
 }
 
@@ -367,25 +367,35 @@ void forward() {
   rightServo.write(RightServoForward);
   leftServo.write(LeftServoForward);
   NeopixelsHigh(0, 255, 0, 0, numofLEDs);//green
+  NeopixelsHigh(0, 255, 0, 0, numofLEDs);//green
+  NeopixelsHigh(0, 255, 0, 0, numofLEDs);//green
 }
 void backward() {
   rightServo.write(RightServoBackward);
   leftServo.write(LeftServoBackward);
+  NeopixelsHigh(255, 0, 0, 0, numofLEDs);//red
+  NeopixelsHigh(255, 0, 0, 0, numofLEDs);//red
   NeopixelsHigh(255, 0, 0, 0, numofLEDs);//red
 }
 void left() {
   rightServo.write(RightServoBackward);
   leftServo.write(LeftServoForward);
   NeopixelsHigh(0, 0, 255, 0, 2);//blue
+  NeopixelsHigh(0, 0, 255, 0, 2);//blue
+  NeopixelsHigh(0, 0, 255, 0, 2);//blue
 }
 void right() {
   rightServo.write(RightServoForward);
   leftServo.write(LeftServoBackward);
   NeopixelsHigh(0, 0, 255, 2, numofLEDs);//blue
+  NeopixelsHigh(0, 0, 255, 2, numofLEDs);//blue
+  NeopixelsHigh(0, 0, 255, 2, numofLEDs);//blue
 }
 void stall() {
   rightServo.detach();
   leftServo.detach();
+  NeopixelsHigh(255, 255, 0, 0, numofLEDs);//yellow
+  NeopixelsHigh(255, 255, 0, 0, numofLEDs);//yellow
   NeopixelsHigh(255, 255, 0, 0, numofLEDs);//yellow
 }
 /*
