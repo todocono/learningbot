@@ -69,10 +69,10 @@ cRGB value;
 #define EchoPin 6
 
 // values for servos. NOTE: you may have to adjust values based on servo performance
-#define LeftServoForward 105
-#define RightServoForward 75
-#define LeftServoBackward 75
-#define RightServoBackward 105
+#define LeftServoForward 105 //Should be between 180 and 90
+#define RightServoForward 82 //Should be between 90 and 0
+#define LeftServoBackward 75 //Should be between 90 and 0
+#define RightServoBackward 105 //Should be between 180 and 90
 //#define LeftServoForward 120
 //#define RightServoForward 60
 //#define LeftServoBackward 60
@@ -91,15 +91,17 @@ bool online = false;//boolean to keep learningbot online within working peramete
 bool leftSensor, rightSensor, leftSensor2, rightSensor2;
 void setup() {
   LED.setOutput(9);//neopixels connected to pin 9
-
   pinMode(Sensor1DigitalPin, INPUT);
   pinMode(Sensor2DigitalPin, INPUT);
   pinMode(Sensor3DigitalPin, INPUT);
   pinMode(Sensor4DigitalPin, INPUT);
   pinMode(TriggerPin, OUTPUT); // Sets the TriggerPin as an Output
   pinMode(EchoPin, INPUT); // Sets the EchoPin as an Input
-
   Serial.begin(9600);
+  //This next bit of code is to help the arduino turn ALL neopixels pink from the getgo
+  NeopixelsHigh(100, 0, 100, 0, numofLEDs); //pink
+  delay(1000);
+  NeopixelsHigh(100, 0, 100, 0, numofLEDs); //pink
 }
 
 void loop() {
@@ -174,10 +176,10 @@ void testAnalogInput() {
      The analog input will affect the brightness of a corresponding
      neopixel near it.
   */
-  int analog1 = (analogRead(Sensor1AnaloglPin) / 4) - 155 ;
-  int analog2 = (analogRead(Sensor2AnaloglPin) / 4) - 155;
-  int analog3 = (analogRead(Sensor3AnaloglPin) / 4) - 155;
-  int analog4 = (analogRead(Sensor4AnaloglPin) / 4) - 155;
+  int analog1 = map((analogRead(Sensor1AnaloglPin)), 0, 1023, 0, 50);
+  int analog2 = map((analogRead(Sensor2AnaloglPin)), 0, 1023, 0, 50);
+  int analog3 = map((analogRead(Sensor3AnaloglPin)), 0, 1023, 0, 50);
+  int analog4 = map((analogRead(Sensor4AnaloglPin)), 0, 1023, 0, 50) ;
   NeopixelsHigh(analog1, analog1, analog1, 3, numofLEDs);
   NeopixelsHigh(analog2, analog2, analog2, 2, 3);
   NeopixelsHigh(analog3, analog3, analog3, 1, 2);
