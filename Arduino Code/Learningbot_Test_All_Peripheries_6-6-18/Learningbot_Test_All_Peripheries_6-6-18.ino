@@ -68,7 +68,7 @@ cRGB value;
 #define TriggerPin 7
 #define EchoPin 6
 
-// values for servos
+// values for servos. NOTE: you may have to adjust values based on servo performance
 #define LeftServoForward 105
 #define RightServoForward 75
 #define LeftServoBackward 75
