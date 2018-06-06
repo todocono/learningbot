@@ -100,7 +100,9 @@ void setup() {
   Serial.begin(9600);
   //This next bit of code is to help the arduino turn ALL neopixels pink from the getgo
   NeopixelsHigh(100, 0, 100, 0, numofLEDs); //pink
-  delay(1000);
+  delay(10);
+  NeopixelsHigh(100, 0, 100, 0, numofLEDs); //pink
+  delay(10);
   NeopixelsHigh(100, 0, 100, 0, numofLEDs); //pink
 }
 
